@@ -93,7 +93,7 @@ innertopmargin=\topskip,
 \mdtheorem[style=taskitemstyle]{taskitemframe}{}
 
 \newcommand{\fieldname}[2]{#1-#2}
-\newcommand{\commenttextfield}[1]{\TextField[name=#1_comment,charsize=0pt,multiline=true,width=\textwidth]{}}
+\newcommand{\commenttextfield}[1]{\TextField[name=#1_comment,charsize=0pt,multiline=true,width=\textwidth,height=115pt]{}}
 \newcommand{\donecheckbox}[1]{\CheckBox[name=#1_done]{Erledigt:}}
 \newenvironment{taskitem}[1]%
 {\newcommand{\taskitemtitle}{#1}\begin{taskitemframe}[#1\hfill \donecheckbox{\taskitemtitle}]}

@@ -6,10 +6,10 @@
 \usepackage{../lib/pk}
 
 % set variables
-\newcommand{\varAuthor}{Robin Bühler}
+\newcommand{\varAuthor}{Robin Bühler, Peter Rutschmann}
 \newcommand{\varCompany}{} % Firmenname
 \newcommand{\varTitle}{Expertencheckliste: für die Durchführung einer IPA als Hauptexperte}
-\newcommand{\varVersion}{Version 2023.3}
+\newcommand{\varVersion}{Version 2024.1}
 
 % footer and headings
 \rohead[\varTitle]{\varTitle}
@@ -23,17 +23,26 @@
   \chapter*{\varTitle}
   Bei geschlechterspezifischen Personenbezeichnungen sind immer alle Geschlechter gemeint.\\
   \\
-  \sbox\TBox{Kandidat: }\TextField[charsize=10pt, width=\dimexpr\linewidth-\wd\TBox]{Kandidat:}
   \sbox\TBox{Arbeitstitel: }\TextField[charsize=10pt, width=\dimexpr\linewidth-\wd\TBox]{Arbeitstitel:}
+  \sbox\TBox{Kandidat: }\TextField[charsize=10pt, width=\dimexpr\linewidth-\wd\TBox]{Kandidat:}
+  \sbox\TBox{Vr.Fachkraft: }\TextField[charsize=10pt, width=\dimexpr\linewidth-\wd\TBox]{Vr.Fachkraft:}
   \sbox\TBox{Hauptexperte: }\TextField[charsize=10pt, width=\dimexpr\linewidth-\wd\TBox]{Hauptexperte:}
+  \sbox\TBox{Nebenexperte: }\TextField[charsize=10pt, width=\dimexpr\linewidth-\wd\TBox]{Nebenexperte:}
   \input{sections/1_preparation}
   \input{sections/2_before-start}
+  \newpage
   \input{sections/3_first-visit}
-  \input{sections/4_second-visit}
+  \newpage
   \input{sections/5_interruptions}
+  \newpage
+  \input{sections/4_second-visit}
+  \newpage
   \input{sections/6_before-presentation}
+  \newpage
   \input{sections/7_presentation}
+  \newpage
   \input{sections/8_assessment}
+  \newpage
   \input{sections/9_submit}
 \end{Form}
 \end{document}
